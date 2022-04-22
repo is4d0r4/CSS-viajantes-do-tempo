@@ -1,0 +1,379 @@
+                @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,500;1,100&display=swap');
+                * {
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    margin: 0;
+                    font-family: 'Josefin Sans', sans-serif;
+                    color: aliceblue;
+                    font-size: 22px;
+                    width: 100vw;
+                    background-color: rgb(20, 12, 10);
+                }
+                
+                header h1 {
+                    font-size: 4rem;
+                }
+                
+                h3 {
+                    width: 100%;
+                    text-align: center;
+                    margin: auto;
+                }
+                
+                button {
+                    padding: 15px 20px;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    border: 0;
+                    background-color: rgb(172, 69, 21);
+                    color: aliceblue;
+                }
+                /* Remove as bolinhas de cada campo,
+e coloca um ao lado do outro */
+                
+                ul {
+                    list-style: none;
+                }
+                
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                }
+                
+                li {
+                    margin: 0 15px;
+                    /* zero em cima e em baixo e 15 de cada lado */
+                }
+                
+                header nav {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: auto 30px;
+                }
+                
+                header nav ul {
+                    list-style: none;
+                    display: flex !important;
+                }
+                
+                header {
+                    height: calc(100vh - 80px);
+                    background: no-repeat center/cover url(images/image1.jpg);
+                }
+                
+                .header-content {
+                    max-width: 600px;
+                    margin: 150px auto;
+                    text-align: center;
+                    text-shadow: 2px 2px 5px blac;
+                }
+                
+                .header-content h1 {
+                    margin-bottom: 10px;
+                }
+                
+                .header-content button:hover {
+                    background-color: rgb(65, 8, 55);
+                }
+                
+                .pack {
+                    background-color: rgb(20, 12, 10);
+                    margin: 20px 0;
+                    padding: 15px;
+                }
+                
+                .pack .pacotes-cards {
+                    display: flex;
+                }
+                
+                .pack .card {
+                    width: 250px;
+                    height: 400px;
+                    background-color: rgb(238, 232, 223);
+                    color: rgb(172, 69, 21);
+                    border-radius: 24px 0px;
+                    margin: 15px auto;
+                    font-size: 15px;
+                    position: relative;
+                }
+                
+                .pack .card:hover {
+                    transform: scale(1.1);
+                }
+                
+                .pack .image {
+                    width: 250px;
+                    height: 200px;
+                    border-radius: 24px 0 0 0;
+                }
+                
+                .pack .card-content {
+                    padding: 0 15px;
+                }
+                
+                .pack .card-content ul {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    padding-left: 0px;
+                }
+                
+                .pack .card-content ul li {
+                    font-size: .9rem;
+                    display: flex;
+                    align-items: center;
+                    margin: 5px 0;
+                    color: rgb(175, 95, 42);
+                }
+                
+                .pack .card-content li svg {
+                    width: 19px;
+                    height: 19px;
+                    margin-right: 5px;
+                }
+                
+                .pack .card-content h2 {
+                    font-size: 1rem;
+                }
+                
+                .pack .card-content h3 {
+                    font-size: 0.9rem;
+                }
+                
+                .pack .card .card-tag-top {
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+                    background: rgb(49, 145, 12);
+                    border-radius: 8px 0 0 8px;
+                    padding: 5px 10px;
+                }
+                
+                .pack .card .card-tag-top p {
+                    margin: 0;
+                    font-size: 0.8rem;
+                    color: white;
+                    font-weight: bold;
+                }
+                
+                .pack .card .card-tag-bottom {
+                    position: absolute;
+                    left: 0;
+                    top: 180px;
+                    background: rgb(172, 69, 21);
+                    border-radius: 0 8px 8px 0;
+                    padding: 5px 10px;
+                }
+                
+                .pack .card .card-tag-bottom p {
+                    margin: 0;
+                    font-size: 1rem;
+                    color: white;
+                }
+                
+                .servicos {
+                    padding: 15px;
+                    background-color: rgb(20, 12, 10);
+                }
+                
+                .servicos .title {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: 35px 0;
+                }
+                
+                .servicos .servicos-cards {
+                    display: flex;
+                    max-width: 950px;
+                    justify-content: space-between;
+                    margin: auto;
+                }
+                
+                .servicos .card {
+                    width: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .servicos .card svg {
+                    width: 40px;
+                    height: 40px;
+                    margin-bottom: 25px;
+                }
+                
+                .servicos .card svg:hover {
+                    stroke: rgb(172, 69, 21);
+                }
+                
+                .servicos .card h3 {
+                    font-weight: bold;
+                }
+                
+                .servicos .card p {
+                    color: grey;
+                    font-size: .8rem;
+                    text-align: center;
+                }
+                
+                .servicos .card .card-content {
+                    height: 180px;
+                    text-align: center;
+                }
+                
+                .contato {
+                    padding: 60px 20%;
+                    background-color:rgb(20, 12, 10);
+                    position: relative;
+                }
+                
+                .contato .contato-card {
+                    width: 350px;
+                    height: 300px;
+                    position: absolute;
+                    background-color: rgb(172, 69, 21);
+                    z-index: 99;
+                    top: calc(50% - 105px);
+                    left: calc(25% - 175px);
+                    border-radius: 24px 24px 24px 24px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .contato ul {
+                    font-size: .8rem;
+                    color: rgb(245, 204, 185);
+                }
+                
+                .contato .title {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: 35px 0;
+                }
+                .contato .contato-card h1 {
+                    font-size: 1.3rem;
+                }
+                
+                .contato .contato-card li {
+                    font-size: 1rem;
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .contato .contato-card li svg {
+                    width: 16px;
+                    margin: 10px;
+                }
+
+                .feedback {
+                    padding: 15px;
+                    background-color: rgb(20, 12, 10);
+                }
+                
+                .feedback .title {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: 35px 0;
+                }
+                
+                .feedback .feedback-cards {
+                    display: flex;
+                    max-width: 950px;
+                    justify-content: space-between;
+                    margin: auto;
+                }
+                
+                .feedback .card {
+                    width: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .feedback .card svg {
+                    width: 40px;
+                    height: 40px;
+                    margin-bottom: 25px;
+                }
+                
+                .feedback .card svg:hover {
+                    stroke: rgb(172, 69, 21);
+                }
+                
+                .feedback .card h3 {
+                    font-weight: bold;
+                }
+                
+                .feedback .card p {
+                    color: grey;
+                    font-size: .8rem;
+                    text-align: center;
+                }
+
+                .feedback .card p:hover {
+                    color: rgb(255, 183, 28);
+                    font-size: .8rem;
+                    text-align: center;
+                }
+               
+                .feedback .card .feedback-img {
+                    width: 6cm;
+                    height: 4cm;
+                    border-radius: 50px;
+                    padding: 15px;
+                }
+
+                .feedback .card .card-content {
+                    height: 180px;
+                    text-align: center;
+                }
+ 
+
+                /* RESPONSIVIDADE */
+                
+                @media (max-width: 480px) {
+                    body {
+                        height: calc(100vh - 55px);
+                    }
+                    header nav ul {
+                        position: fixed;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        background-color: rgb(20, 12, 10);
+                        height: 55px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    header nav p {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                
+                @media (max-width:767px) {
+                    header {
+                        background: rgb(20, 12, 10);
+                    }
+                }
+                
+                @media (max-width:768px) and (max-width:979px) {}
+                
+                @media(min-width: 1200px) {}
+                /*MAPINHA*/
+                
+                #map {
+                    height: 400px;
+                    /* The height is 400 pixels */
+                    width: 100%;
+                    /* The width is the width of the web page */
+                }
